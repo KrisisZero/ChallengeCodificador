@@ -1,0 +1,53 @@
+.areaCopiar{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    
+    
+    background-image: url(assets/Muñeco.png);
+    background-repeat:no-repeat;
+    background-position: center;    
+}
+
+.areaCopiar textarea {
+    box-sizing: border-box;
+    border: transparent;
+    background-color: transparent;
+    height: 200px;
+    resize: none;
+    outline: none;
+    padding: 150px 10px 50px 10px;
+    border-color: none;
+    text-align: center;
+    box-sizing: content-box;
+    
+}
+
+.areaCopiar button {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    
+    /*texto*/
+    background: #D8DFE8;
+    text-align: center;
+    
+    font-size: 16px;
+    color: #0A3871;
+    
+
+}
+
+button:hover{
+    background-color: #EFF1FA;
+}
+
+button:active{
+    box-shadow: inset -2px -2px 3px white, inset 2px 2px 3px black;
+}

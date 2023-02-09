@@ -1,0 +1,219 @@
+body{
+    background-color: #F3F5FC;
+}
+
+.logo{
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
+
+.cuadroTexto{
+    position: relative;
+    width: auto;
+    left: 240px;
+    top: 168px;
+    background-color: #F3F5FC;    
+    border-style: none;
+    resize: none;
+    display: inline;
+    font-size: 32px;
+    color: #0A3871;
+}
+
+.alerta{
+    font-size: 12px;
+    color: #495057;
+    position: absolute;    
+    left: 264px;
+    bottom: 155px;
+    display: inline-block;
+}
+
+/*botton*/
+.encriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    position: absolute;
+    left: 240px; bottom: 72px;
+    /*texto*/
+    background: #0a3871;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+.encriptar:hover{
+    background-color: #072B61;
+}
+
+.encriptar:active{
+    box-shadow: inset -2px -2px 3px white, inset 2px 2px 3px black;
+}
+
+/*boton*/
+.desencriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    position: absolute;
+    left: 580px; bottom: 72px;
+    /*texto*/
+    background: #D8DFE8;
+    text-align: center;
+    font-size: 16px;
+    color: #0A3871;
+}
+
+.desencriptar:hover{
+    background-color: #EFF1FA;
+}
+
+.desencriptar:active{
+    box-shadow: inset -2px -2px 3px white, inset 2px 2px 3px black;
+}
+
+    /* area de copia */
+    
+.mensajeAviso {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #343a40;
+    width: fill;
+    height: 58px;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 5px;
+    top: 579px;
+    left: 32px;
+    right: 32px;
+    width: auto;
+    font-family: 'inter';
+    font-style: normal;
+    display: show;    
+}
+
+.areaCopiar{
+    position: absolute;
+    left: 1000px;
+    top: 40px;
+    bottom: 40px;
+    height: 800px;    
+    width: 400px;
+    border-radius: 32px;
+    background-color: white;    
+}
+
+.areaCopiar textarea{
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    right: 32px;
+    width: auto;
+    box-sizing: border-box;
+    background-color: transparent;
+    height: auto;
+    resize: none;
+    border: none;
+    outline: none;
+    text-align: center;    
+    font-size: 14.5px;
+}
+
+.monoCuadro{
+    position: relative;
+    box-sizing: content-box;
+    left: 32px;
+    top: 220px;
+    display: block;
+    z-index: 1;
+    display: show;
+}
+
+.areaCopiar button{
+    width: auto;
+    height: 67px;
+    border-radius: 24px;
+    padding: 5px;
+    position: absolute;
+    left: 32px;
+    bottom: 32px;
+    right: 32px;
+    
+    /*texto*/
+    background: #D8DFE8;
+    text-align: center;
+    font-size: 16px;
+    color: #0A3871;
+    display: none;    
+}
+
+button:hover{
+    background-color: #EFF1FA;
+}
+
+button:active{
+    box-shadow: inset -2px -2px 3px white, inset 2px 2px 3px black;
+}
+
+/*termina area de copia */
+
+@media screen and (max-width:1079px){
+    
+    .logo{
+        position: absolute;
+        left: 0px;
+        top: 24px;
+    }
+
+    .cuadroTexto, .alerta, .areaCopiar{
+        width: 95%;
+        position: relative;
+        box-sizing: content-box;
+        left: 8px;
+        right: 8px;
+        margin: 1%;
+    }
+    
+    .monoCuadro{
+        display: none;
+    }
+
+    .cuadroTexto{
+        
+        height: 340px;
+    }
+    
+    .alerta{
+        top: 150px;
+    }
+
+    .encriptar, .desencriptar{
+        position: relative;
+        top: 160px;
+        left: 16px;
+        margin-top: 16px;
+    }
+
+    .mensajeAviso{
+        top: 70px;
+    }
+
+    .areaCopiar{
+        top: 200px;
+        width: 340;
+        height: 200px;
+        
+    }
+
+    .copiador{
+        bottom: 6px;
+        left: 6;
+        width: 279;        
+    }
+   
+}

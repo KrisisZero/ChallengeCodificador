@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador 1.0</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style-encriptador.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">                 
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="assets/Alura Challenge - Desafío 1 - Lógica/Logo.png">
+        </header>
+        <main>
+            <form>
+                <label for="cuadroTexto"></label>
+                <textarea cols="40" rows="15" id="cuadroTextoEncryptar" class="cuadroTexto" required placeholder="Ingrese el texto aquí."></textarea>
+                                
+            </form>
+            <div>
+                <p class="alerta">⚠ Solo letras minúsculas y sin acentos.</p>
+            </div>
+            <div>
+                <input type="button" id="boton1" value="Encriptar" class="encriptar" onclick="encriptando()">
+                <input type="button" id="boton2" value="Desencriptar" class="desencriptar" onclick="desencriptado()">
+            </div>
+            <div class="areaCopiar">
+                <img class="monoCuadro" src="assets/Muñeco.png" id="mono1" display="show">
+                <p class="mensajeAviso" id="mensajeNoEncontrado">Ningún mensaje fue encontrado.</p>
+                <textarea cols="40" rows="30" id="cuadroDesencriptado" class="cuadroSegundo" required placeholder="Ingresa texto que desees encriptar o desencriptar"></textarea>
+                <button id=copiando class="copiador" onclick="copiando()">Copiar</button>
+            </div>
+                           
+            <script src="main.js"></script>
+
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
